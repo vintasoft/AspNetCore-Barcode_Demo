@@ -1,0 +1,215 @@
+/* Style for WebImageToolBar. */
+.imageToolBar {
+    border: 1px solid #aaa;
+    background: #ccc url("../Images/MainToolbar/background.png") 50% 50% repeat-x;
+    height: 50px;
+    width: 100%;
+}
+
+    /* Style for divs in WebImageToolBar. */
+    .imageToolBar div {
+        float: left;
+        margin-top: 9px;
+    }
+
+    /* Style for element that stores text or label in WebImageToolBar. */
+    .imageToolBar .submenuText {
+        margin-top: 14px;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+        /* Style for inout element that stores text or label in WebImageToolBar. */
+        .imageToolBar .submenuText input[type="text"] {
+            width: 30px;
+            text-align: center;
+            border: 1px solid black;
+        }
+
+/* Style for vertical separator in WebImageToolBar. */
+.imageToolBar-div-separator {
+    width: 2px;
+    height: 32px;
+    background-color: rgb(125,125,125);
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+
+/* Style for side menu with with icons. */
+#sideMenuIcons {
+    background: #eeeeee;
+    position: absolute;
+    text-align: center;
+    width: 42px;
+    height: 645px;
+    padding-bottom: 5px;
+    margin-top: 5px;
+    border: 1px solid #aaa;
+}
+
+    /* Style for div element that stores icon of side menu with icons. */
+    #sideMenuIcons div {
+        padding: 5px;
+        height: 32px;
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+/* Style for active icon in side menu with icons*/
+.activeSideMenuIcon {
+    background: white;
+}
+
+
+/* Style for container of side panels. */
+#sideMenuPanel {
+    width: 250px;
+    height: 650px;
+    position: absolute;
+    margin-left: 43px;
+    margin-top: 5px;
+    display: none;
+    border-top: 1px solid #aaa;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+    background: white;
+    overflow: hidden;
+}
+
+/* Style for header of side panel. */
+.sideMenuPanelHeader {
+    width: 100%;
+    height: 31px;
+    /*text-align: center;*/
+    background: white;
+    color: #333333;
+    /*display: table;*/
+    position: relative;
+}
+
+/* Style that is applied to the side panel when it is opened. */
+.sidemenu-open {
+    border-right: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+}
+
+
+/* Style for image viewer panel. */
+#ImageViewerPanel {
+    border: 1px solid #aaa;
+    width: 1100px;
+    height: 650px;
+    margin-left: 49px;
+    margin-top: 5px;
+    background: rgb(168,168,168);
+}
+
+/* Style for content panel which is placed in side panel. */
+.contentTab {
+    position: relative;
+    display: none;
+    /*width: 240px;*/
+    height: 595px;
+    margin: 5px;
+    background-color: white;
+}
+
+
+/* Styles for rounding of panel corners. */
+.corner-all,
+.corner-top,
+.corner-left,
+.corner-tl {
+    border-top-left-radius: 4px;
+}
+
+.corner-all,
+.corner-top,
+.corner-right,
+.corner-tr {
+    border-top-right-radius: 4px;
+}
+
+.corner-all,
+.corner-bottom,
+.corner-left,
+.corner-bl {
+    border-bottom-left-radius: 4px;
+}
+
+.corner-all,
+.corner-bottom,
+.corner-right,
+.corner-br {
+    border-bottom-right-radius: 4px;
+}
+
+
+/* Style for file input. */
+#ajaxFile {
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    height: 32px;
+    width: 32px;
+    overflow: hidden;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.processingDialog {
+    display: none;
+    font-family: sans-serif;
+    font-size: 14px;
+    height: 650px;
+}
+
+.processingIcon {
+    margin-left: 15px !important;
+    margin-top: 10px !important;
+}
+
+.addAnnotationIcon {
+    margin-left: 5px !important;
+}
+
+
+
+.propertyTable {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+    /* Style for odd table cell without colspan. */
+    .propertyTable td:not([colspan]):nth-child(odd) {
+        background-color: rgb(229,229,229);
+    }
+
+    .propertyTable td input:not([type='button']) {
+        width: 90px;
+        height: 15px;
+    }
+
+    .propertyTable .spoiler {
+        background-color: rgb(148,145,145) !important;
+    }
+
+        .propertyTable .spoiler.open {
+            background-color: rgb(191,191,191) !important;
+        }
+
+.base-command,
+.info-command,
+.transform-command,
+.color-command,
+.document-command,
+.filter-command,
+.effects-command {
+    margin-left: 3px;
+}
+
+.ms-parent input {
+    width: auto !important;
+}

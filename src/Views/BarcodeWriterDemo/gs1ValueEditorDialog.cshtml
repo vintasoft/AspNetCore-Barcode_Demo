@@ -1,0 +1,25 @@
+﻿<div id="gs1ValueEditorDialog" class="modalDialog" style="visibility: hidden;">
+    <label for="gs1PrintableValue">GS1 printable value:</label>
+    <br />
+    <input type="text" id="gs1PrintableValue" style="width: 550px;" tabindex="-1" value="(01)01234567890128" readonly />
+    <br />
+    <br />
+    <label for="gs1Value">GS1 value (set of GS1 Application Identifier values):</label>
+    <br />
+    <table id="gs1Value" border="1" style="width: 550px;">
+        <tr>
+            <th>AI</th>
+            <th>AI name</th>
+            <th>AI data</th>
+            <th>Actions</th>
+        </tr>
+        <tr>
+            <td>01</td>
+            <td>GTIN</td>
+            <td>01234567890128</td>
+            <td style="text-align: center;"><input type="button" value="Edit" id="editGs1AppIdValue" /> <input type="button" value="Delete" id="deleteGs1AppIdValue" /></td>
+        </tr>
+    </table>
+    <br />
+    <input type="button" value="Add GS1 Application Identifier value to GS1 value" id="addGs1AppIdValue" />
+</div>
